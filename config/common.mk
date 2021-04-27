@@ -28,6 +28,12 @@ ifeq ($(USE_GAPPS), true)
 $(call inherit-product, vendor/gapps/gapps.mk)
 endif
 
+ifeq ($(KANGOS_BUILDTYPE),OFFICIAL)
+    PRODUCT_PACKAGES += \
+    Updater
+endif
+
+
 ifeq ($(PRODUCT_USES_QCOM_HARDWARE), true)
 include vendor/kangos/build/core/qcom_target.mk
 endif
