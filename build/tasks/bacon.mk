@@ -49,3 +49,4 @@ bacon: otapackage
 	echo -e ${CL_RED}"====                   |___/_____|          	====="${CL_RST}
 	echo -e ${CL_BLU}" =================================================="${CL_RED}
 	@echo "Kanged Everything Ready to Rock"
+	$(hide) . vendor/kangos/tools/json.sh

@@ -39,8 +39,8 @@ PRODUCT_PRODUCT_PROPERTIES += \
     ro.kangos.fingerprint=$(KANGOS_BUILD_FINGERPRINT) \
     ro.kangos.version=$(KANGOS_VERSION) \
     ro.kangos.build_id=KangOS-$(KANGOS_BUILD_ID) \
-    ro.kangos.build.type=$(KANGOS_BUILDTYPE) 
-
+    ro.kangos.build.type=$(KANGOS_BUILDTYPE) \
+    ro.kangos.build.version=$(KANGOS_REVISION).$(KANGOS_SUBREVISION)
 ifeq ($(KANGOS_BUILDTYPE),OFFICIAL)
     PRODUCT_PRODUCT_PROPERTIES += ro.ota.kangos.build_id=$(KANGOS_BUILD_ID)
 endif
