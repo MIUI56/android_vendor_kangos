@@ -124,4 +124,8 @@ endif
 PRODUCT_PACKAGES += \
     charger_res_images
 
+ifeq ($(SHIP_LAWNCHAIR),true)
+-include packages/apps/Lawnchair/lawnchair.mk
+endif
+
 -include packages/apps/Plugins/plugins.mk
